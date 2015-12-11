@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ReverseString
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string INP;
+            Console.WriteLine("Enter string");
+            INP = Console.ReadLine();
+            char[] array = INP.ToCharArray();
+            Array.Reverse(array);
+            Console.WriteLine(array);
+            Console.ReadLine();
+        }
+    }
+}
