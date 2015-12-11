@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PigLatin
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string INP;
+            Console.WriteLine("Enter string");
+            INP = Console.ReadLine();
+            char[] array = INP.ToCharArray();
+            for (int counter = 1; counter< array.Length; counter++)
+            {
+                Console.Write(array[counter]);
+            }
+            Console.Write("-");
+            Console.Write(array[0] + "ay");
+            Console.ReadLine();
+        }
+    }
+}
