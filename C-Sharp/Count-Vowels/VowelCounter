@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CountVowels
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string INP;
+            int numA = 0;
+            int numE = 0;
+            int numI = 0;
+            int numY = 0;
+            int numU = 0;
+            int numO = 0;
+            Console.WriteLine("Enter string");
+            INP = Console.ReadLine();
+            char[] array = INP.ToCharArray();
+            for(int counter = 0; counter < array.Length; counter++)
+            {
+                if (array[counter] == 'A' || array[counter] == 'a')
+                {
+                    numA++;
+                }
+            }
+            for (int counter = 0; counter < array.Length; counter++)
+            {
+                if (array[counter] == 'E' || array[counter] == 'e')
+                {
+                    numE++;
+                }
+            }
+            for (int counter = 0; counter < array.Length; counter++)
+            {
+                if (array[counter] == 'I' || array[counter] == 'i')
+                {
+                    numI++;
+                }
+            }
+            for (int counter = 0; counter < array.Length; counter++)
+            {
+                if (array[counter] == 'Y' || array[counter] == 'y')
+                {
+                    numY++;
+                }
+            }
+            for (int counter = 0; counter < array.Length; counter++)
+            {
+                if (array[counter] == 'U' || array[counter] == 'u')
+                {
+                    numU++;
+                }
+            }
+            for (int counter = 0; counter < array.Length; counter++)
+            {
+                if (array[counter] == 'O' || array[counter] == 'o')
+                {
+                    numO++;
+                }
+            }
+            Console.WriteLine("There amount of As is: " + numA);
+            Console.WriteLine("There amount of Es is: " + numE);
+            Console.WriteLine("There amount of Is is: " + numI);
+            Console.WriteLine("There amount of Ys is: " + numY);
+            Console.WriteLine("There amount of Us is: " + numU);
+            Console.WriteLine("There amount of Os is: " + numO);
+            int numALL = numA + numE + numI + numY + numU + numO;
+            Console.WriteLine("There amount of all vowels is: " + numALL);
+            Console.ReadKey();
+        }
+    }
+}
