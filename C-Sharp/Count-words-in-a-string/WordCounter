@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WordCounter
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter string");
+            string INP;
+            int wordcounter = 0;
+            INP = Console.ReadLine();
+            char[] array = INP.ToCharArray();
+            for(int counter = 0; counter<array.Length; counter++)
+            {
+                if (array[counter] == ' ')
+                {
+                    wordcounter++;
+                }
+            }
+            wordcounter = wordcounter + 1;
+            Console.WriteLine("The word count is: " + wordcounter);
+            Console.ReadKey();
+        }
+    }
+}
