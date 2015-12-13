@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PalindromeCheck
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string INP;
+            Console.WriteLine("Enter string");
+            INP = Console.ReadLine();
+            char[] array = INP.ToCharArray();
+            Array.Reverse(array);
+            string INPcompare = new string(array);
+            if (INP == INPcompare)
+            {
+                Console.WriteLine("This string is a palindrome!");
+            }
+            else
+            {
+                Console.WriteLine("This string is not a palindrome");
+            }
+            Console.ReadKey();
+        }
+    }
+}
